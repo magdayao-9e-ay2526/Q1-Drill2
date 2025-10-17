@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Q1 Drill 2</title>
+	<!-- GOOGLE FONTS -->
+	
+	<style type="text/css">
+
+		body {
+			/*background-color: skyblue;*/
+			background-image: url(https://img.freepik.com/free-photo/movie-background-collage_23-2149876005.jpg?semt=ais_incoming&w=740&q=80);
+			font-family: "Roboto", sans-serif;
+		}
+
+		p {
+			text-align: center;
+			color: black;
+		}
+
+		h1,hr {
+			text-align: center;
+			color:black;
+		}
+
+		form{
+			margin: auto;
+			background-color: lightsteelblue;
+			width: 50%;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 10px 10px 5px 0px rgba(170,156,156,0.75);
+		}
+
+		input [type= "text"] {
+			width: 15%;
+		
+		}
+
+		input [type ="submit"] {
+			background-color: blue;
+			width: 100%;
+			border-radius: 10px;
+		}
+
+			
+
+	</style>
+</head>
+<body>
+
+<form>
+	<h1>Movie Recommendation</h1>
+	<fieldset>
+		<legend></legend>
+		<label for="yourname">Your Name: </label><br>
+		<input type="text" name="yourname">
+        <br>
+		<label for="youremail">Your Mail: </label><br>
+		<input type="email" name="yourmail">
+        <br>
+		<label for="moviename">Recomended Movie: </label><br>
+		<input type="text" name="moviename">
+		<br>
+		<label>Why do you recommend this movie? :</label><br>
+		<textarea cols="40" rows="5" placeholder="feedback here..."></textarea>
+	</fieldset>
+
+		<!-- Genre -->
+	<fieldset>
+		<legend>Genres (Select all that apply)</legend>
+
+		<input type="checkbox" name="Genres" value="action">
+		<label>Action</label><br>
+
+		<input type="checkbox" name="Genres" value="comedy">
+		<label>Comedy</label><br>
+
+		<input type="checkbox" name="Genres" value="drama">
+		<label>Drama</label><br>
+
+		<input type="checkbox" name="Genres" value="fantasy">
+		<label>Fantasy</label><br>
+
+		<input type="checkbox" name="Genres" value="sci-fi">
+		<label>Sci-Fi</label><br>
+
+		<input type="checkbox" name="Genres" value="horror">
+		<label>Horror</label><br>
+
+		<input type="checkbox" name="Genres" value="thriller">
+		<label>Thriller</label><br>
+	</fieldset>
+
+
+		<!-- Rating -->
+	<fieldset>
+		<legend>Rate the Movie (1-5)</legend>
+
+		<input type="radio" name="Rate" value="1">
+		<label>1</label><br>
+
+		<input type="radio" name="crust" value="2">
+		<label>2</label><br>
+
+		<input type="radio" name="crust" value="3">
+		<label>3</label><br>
+
+		<input type="radio" name="crust" value="4">
+		<label>4</label><br>
+
+		<input type="radio" name="crust" value="5">
+		<label>5</label><br>
+	</fieldset>
+
+		<!-- Streaming -->
+	<fieldset>
+		<legend>Where did you watch it?</legend>
+
+		<select id="">
+				<option value="Netflix">Netflix</option>
+				<option value="Hulu">Hulu</option>
+				<option value="Disney+">Disney+</option>
+				<option value="Amazon">Amazon Prime Video</option>
+				<option value="Apple TV+">Apple TV+</option>
+			</select>
+
+	</fieldset>
+
+	<input type="submit" value="Submit Recommendation">
+	<input type="reset" value="Reset Form">
+
+</form>
+</body>
+</html>
